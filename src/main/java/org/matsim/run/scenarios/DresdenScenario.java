@@ -254,6 +254,9 @@ public class DresdenScenario extends MATSimApplication {
 			network.getLinks().get(carolaBridgeLinkId1).setFreespeed(0.00001);
 			network.getLinks().get(carolaBridgeLinkId2).setFreespeed(0.00001);
 
+			// reroute pt lines
+
+
 			// remove the route in the plan, if the route covers carola bridge (i.e., they need to re-route at the first iteration already).
 			for (Person person : scenario.getPopulation().getPersons().values()) {
 				for (Plan plan : person.getPlans()) {
